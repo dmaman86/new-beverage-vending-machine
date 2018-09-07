@@ -5,6 +5,8 @@ var bodyParser = require('body-parser');
 var app = express();
 
 // upload routes
+var products_price_kind = require('./routes/product_price_kind');
+
 
 // middlewares
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -21,6 +23,7 @@ app.use((req, res, next) => {
 });
 
 // routes
+api.use('/api', products_price_kind);
 
 // exports 
 module.exports = app;
