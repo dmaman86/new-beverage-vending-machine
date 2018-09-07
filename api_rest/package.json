@@ -1,0 +1,28 @@
+{
+  "name": "api_rest",
+  "version": "1.0.0",
+  "description": "New Api Rest Beverage Vending Machine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmaman86/new-beverage-vending-machine.git"
+  },
+  "author": "David Maman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmaman86/new-beverage-vending-machine/issues"
+  },
+  "homepage": "https://github.com/dmaman86/new-beverage-vending-machine#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "moment": "^2.22.2",
+    "mongoose": "^5.2.13"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
