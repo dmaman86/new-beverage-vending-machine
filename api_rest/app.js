@@ -8,6 +8,7 @@ var app = express();
 var products_price_kind = require('./routes/product_price_kind');
 var machine = require('./routes/machine');
 var stock = require('./routes/stock');
+var buyproduct = require('./routes/buy_product');
 
 // middlewares
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -27,6 +28,7 @@ app.use((req, res, next) => {
 app.use('/api', products_price_kind);
 app.use('/api', machine);
 app.use('/api', stock);
+app.use('/api', buyproduct);
 
 // exports 
 module.exports = app;
