@@ -7,6 +7,7 @@ var app = express();
 // upload routes
 var products_price_kind = require('./routes/product_price_kind');
 var machine = require('./routes/machine');
+var stock = require('./routes/stock');
 
 // middlewares
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -25,6 +26,7 @@ app.use((req, res, next) => {
 // routes
 app.use('/api', products_price_kind);
 app.use('/api', machine);
+app.use('/api', stock);
 
 // exports 
 module.exports = app;

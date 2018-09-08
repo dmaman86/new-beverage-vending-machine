@@ -45,37 +45,6 @@ function addMachine(req, res){
             });
         }
     });
-
-    /*Machine.find({ address: machine.address }, (err, machineFound) => {
-        if(err){
-            return res.status(500).send({
-                message: `Error to save machine ${ err }`
-            });
-        }
-        if(machineFound){
-            return res.status(200).send({
-                message: 'This machine exist'
-            });
-        }
-        else {
-            machine.save( (err, machineStored) => {
-                if(err){
-                    return res.status(500).send({
-                        message: `Error to save machine ${ err }`
-                    });
-                }
-                if(!machineStored){
-                    return res.status(404).send({
-                        message: 'Something wrong, connect to admin'
-                    });
-                }
-
-                return res.status(200).send({
-                    machine: machineStored
-                })
-            });
-        }
-    });*/
 }
 
 function updateMachine(req, res){
