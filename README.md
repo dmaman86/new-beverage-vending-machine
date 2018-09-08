@@ -4,8 +4,11 @@ In this project I make an api rest of a beverage machine.
 
 I create some models:
 1. beverage model (name, type, price)
+
 2. model of machines (only has the location of the machine)
+
 3.stock (there may be several machines but they may have the same products, but most likely they do not have the same amount)
+
 4. shopping model -> here is the part that we unite all
 
 We verify that the machine exists and that the product exists. Then we verify the payment methods.
